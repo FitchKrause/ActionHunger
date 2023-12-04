@@ -28,6 +28,11 @@ public abstract class PlayerEntityMixin {
     private float actionHunger$changeJumpExhaustionAmount(float _original) {
         return Config.jumpExhaustionAmount;
     }
+	
+    @ModifyArg(method = "attack", at = @At(value = "INVOKE", target = "Lnet/minecraft/entity/player/PlayerEntity;addExhaustion(F)V", ordinal = 0), index = 0)
+    private float actionHunger$changeAttackExhaustionAmount(float _original) {
+		return Config.attackingEnemyExhaustionAmount;
+	}
 
     @Unique private float movementForExhaustion;
 

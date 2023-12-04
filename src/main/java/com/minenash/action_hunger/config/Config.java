@@ -40,6 +40,8 @@ public class Config extends TinyConfig {
 
     public static float jumpExhaustionAmount = 0.05F;
     public static float sprintJumpExhaustionAmount = 0.2F;
+    public static float breakingBlockExhaustionAmount = 0.025F;
+    public static float attackingEnemyExhaustionAmount = 0.1F;
     public static float walkingExhaustionMultiplier = 0.0F;
     public static float sprintingExhaustionMultiplier = 0.1F;
     public static float crouchingExhaustionMultiplier = 0.0F;
